@@ -1,5 +1,5 @@
 import time
-import winsound  # For Windows sound alert (Mac users see note below)
+import winsound
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -30,7 +30,7 @@ def check_haul_for_sales():
         
         for keyword in TARGET_KEYWORDS:
             if keyword in page_text:
-                print(f"\n🚨 ALERT! Keyword '{keyword}' found on Amazon Haul! 🚨")
+                print(f"\n ALERT! Keyword '{keyword}' found on Amazon Haul!")
                 print(f"Check it out here: {HAUL_URL}\n")
                 
                 # Play an alert sound 
