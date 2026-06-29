@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 # --- CONFIGURATION ---
 HAUL_URL = "https://www.amazon.com/haul"
 TARGET_KEYWORDS = ["flash deal", "flash sale", "50% off", "sitewide sale"]
-CHECK_INTERVAL = 3600  # Checks every 3600 seconds (1 hour)
+CHECK_INTERVAL = 3600  # 3600초 마다 체크!
 
 def setup_browser():
     """Configures a headless browser to bypass basic bot detection."""
